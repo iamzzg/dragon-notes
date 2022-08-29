@@ -4,12 +4,12 @@ module.exports = {
   // 主题配置,默认主题也在此配置
   themeConfig: {
     // 左边logo配置,/以.vuepress/public目录为静态资源目录
-    logo: "/assets/img/hero.webp",
-    // 导航栏的链接
+    logo: "/assets/img/logo.jpg",
+    // 顶部导航栏的链接
     nav: [
       { text: "首页", link: "/" },
       { text: "引导", link: "/guide/" },
-      { text: "外部链接", link: "https://www.baidu.com" },
+      { text: "百度", link: "https://www.baidu.com" },
       {
         text: "语言",
         ariaLabel: "语言菜单",
