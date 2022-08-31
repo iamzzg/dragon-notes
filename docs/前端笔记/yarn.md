@@ -12,6 +12,7 @@ yarn help
 
 ```shell
 yarn init
+yarn init
 ```
 
 3. 安装所有依赖项
