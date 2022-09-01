@@ -1,6 +1,6 @@
 name: syncToGitee
 on:
-  push:
+  push: # 分支docs git push时,执行该以下jobs
     branches:
       - docs
 jobs:

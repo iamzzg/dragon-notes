@@ -3,6 +3,7 @@ const { getSidebarArray } = require("../util/index");
 
 module.exports = {
   title: "前端笔记",
+  base: "/dragon-notes/",
   description: "前端知识记录积累",
   // 主题配置,默认主题也在此配置
   themeConfig: {
