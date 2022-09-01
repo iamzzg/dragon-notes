@@ -1,19 +1,19 @@
 name: syncToGitee
 on:
-  push: # 分支docs git push时,执行该以下jobs
+  push: # 监听分支docs git push时,执行该以下jobs
     branches:
       - docs
 jobs:
-  repo-sync:
-    runs-on: ubuntu-latest
+  repo-sync: # job名称
+    runs-on: ubuntu-latest # 指定运行环境
     steps:
       - name: Mirror the Github organization repos to Gitee.
-        uses: Yikun/hub-mirror-action@master
+        uses: Yikun/hub-mirror-action@master # 使用的第三方action
         with:
-          src: "github/iamzzg"
-          dst: "gitee/iamzzg"
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token: ${{ secrets.GITEE_TOKEN }}
+          src: "github/iamzzg" # 源仓库
+          dst: "gitee/iamzzg" # 目的仓库
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 目的仓库地址的私钥
+          dst_token: ${{ secrets.GITEE_TOKEN }} # 目的仓库的token
           static_list: "dragon-notes"
           force_update: true
           debug: true

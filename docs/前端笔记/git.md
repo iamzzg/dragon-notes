@@ -65,3 +65,10 @@ IdentityFile ~/.ssh/github_id_rsa
 ssh -T git@gitee.com
 ssh -T git@github.com
 ```
+
+## git 提交时跳过 husky 添加的 pre-commit commit-msg 钩子
+
+```bash
+# 此时 husky 添加的钩子中的脚本就不会执行了
+git commit --no-verify -m "message"
+```
