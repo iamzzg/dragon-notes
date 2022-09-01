@@ -1,8 +1,17 @@
 # git
 
+## 拉取远程仓库代码覆盖本地分支
+
+```bash
+git fetch --all # 下载远程仓库最新内容，不做合并
+git reset --hard origin/main #指向 main 最新版本
+git pull
+```
+
 ## 修改远程仓库地址
 
 ```bash
+git remote -v # 查看远程仓库地址
 git remote remove origin # 移除远程仓库地址
 git remote add origin 远程仓库地址 # 添加仓库地址
 ```
