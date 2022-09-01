@@ -9,6 +9,9 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
+# 拷贝github action .yml 文件 cp -r(表示递归拷贝) 拷贝的目录 要拷贝到的位置
+cp -r ../../../.github/ ./
+
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
