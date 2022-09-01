@@ -34,3 +34,10 @@ echo 内容 -> test.txt
 # 不带内容
 cd.> test.txt
 ```
+
+## 复制文件夹到指定位置 cp -r source target
+
+```bash
+#-r 表示递归
+cp -r ../../demo ./ # 表示复制 ../../demo文件夹到当前目录
+```
