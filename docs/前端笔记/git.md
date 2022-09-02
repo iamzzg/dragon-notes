@@ -72,3 +72,26 @@ ssh -T git@github.com
 # 此时 husky 添加的钩子中的脚本就不会执行了
 git commit --no-verify -m "message"
 ```
+
+## 回退版本 git revert 或者 git reset
+
+> 区别:git revert 还能保存回退版本后的版本记录,git reset 则是重置了
+
+1. git revert
+
+```bash
+# 查看版本信息
+git log
+# 回退版本
+git revert -n 版本hash
+# 取消 revert 回退操作
+git revert --abort
+```
+
+2. git reset
+
+```bash
+git reset --hard 版本hash
+git commit -m ""
+git push -f
+```
